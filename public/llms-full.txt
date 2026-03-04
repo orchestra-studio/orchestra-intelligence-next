@@ -1,0 +1,274 @@
+# Orchestra Intelligence — Documentation Complète
+
+> L'IA Claire, Utile et Humaine.
+
+Orchestra Intelligence est une agence française spécialisée dans le développement, le déploiement et le pilotage d'agents IA pour les entreprises. Fondée par Ludovic Goutel, elle accompagne les organisations dans leur transformation par l'intelligence artificielle avec une approche pragmatique, humaine et orientée résultats.
+
+---
+
+## Identité
+
+- **Nom** : Orchestra Intelligence
+- **Fondateur** : Ludovic Goutel
+- **Siège social** : Toulouse, France
+- **Présence** : France, Suisse, Dubaï, Corée du Sud
+- **Site web** : https://www.orchestraintelligence.fr
+- **Email commercial** : sales@orchestraintelligence.fr
+- **Secteur** : Services IA B2B — Conseil, Développement, Formation
+- **Année de création** : 2024
+
+---
+
+## Mission
+
+Rendre l'intelligence artificielle claire, utile et humaine pour chaque entreprise. Orchestra Intelligence démystifie l'IA et la transforme en levier concret de croissance, de productivité et d'innovation.
+
+---
+
+## Méthode : Comprendre → Automatiser → Piloter
+
+Orchestra Intelligence applique une méthodologie en 3 phases pour chaque projet client :
+
+### Phase 1 — Comprendre
+- Diagnostic 360° de la maturité IA de l'entreprise
+- Identification des processus à fort potentiel d'automatisation
+- Cartographie des flux de données et des outils existants
+- Scoring sur 6 axes : Stratégie, Données, Processus, Outils, Compétences, Culture
+- Livrable : Rapport PDF personnalisé avec roadmap priorisée
+
+### Phase 2 — Automatiser
+- Conception et développement d'agents IA sur mesure
+- Intégration avec les outils existants (CRM, ERP, marketing, RH)
+- Tests, validation et mise en production progressive
+- Formation des équipes à l'utilisation des agents
+- Livrable : Agents IA opérationnels + documentation
+
+### Phase 3 — Piloter
+- Supervision continue des agents en production
+- Optimisation des performances (précision, vitesse, coût)
+- Reporting mensuel avec KPIs et recommandations
+- Évolution des agents selon les besoins métier
+- Livrable : Tableau de bord de pilotage + rapports mensuels
+
+---
+
+## Offres Détaillées
+
+### 1. Agent Studio — Agents IA Sur Mesure
+
+**Description** : Conception et déploiement d'agents IA personnalisés pour automatiser les processus métier de l'entreprise. Chaque agent est conçu sur mesure, intégré aux outils existants et supervisé en continu.
+
+**Domaines d'application** :
+- **CRM & Ventes** : Qualification automatique des leads, relances personnalisées, prévisions de ventes, scoring prospects, rédaction de propositions commerciales
+- **Marketing Digital** : Création de contenu multi-canal, gestion des campagnes email, optimisation SEO/GEO, analyse de la concurrence, social media management
+- **Ressources Humaines** : Tri automatique des CV, pré-qualification des candidats, onboarding assisté, chatbot RH interne, gestion administrative
+- **Finance & Comptabilité** : Rapprochement bancaire automatique, catégorisation des dépenses, génération de rapports financiers, détection d'anomalies, facturation automatique
+- **Opérations** : Gestion documentaire intelligente, traduction multi-langues, extraction de données, automatisation des workflows, reporting automatisé
+
+**Tarification** :
+- À partir de **3 000€/mois** (engagement 6 mois minimum)
+- Setup initial : à partir de 4 500€
+- Inclut : développement, déploiement, maintenance, support, optimisations mensuelles
+- Tarif développement : 950€/jour de build
+
+**Technologies utilisées** :
+- LLMs : GPT-4, Claude, Gemini, Llama (selon le cas d'usage)
+- Orchestration : LangChain, CrewAI, orchestration multi-agents propriétaire
+- Intégrations : Supabase, n8n, Make, Zapier, API custom
+- Frontend : React, Next.js, Tailwind CSS
+- Infrastructure : Vercel, Hetzner, Fly.io, Docker
+
+**Processus** :
+1. Consultation gratuite (30 min)
+2. Diagnostic et cadrage (1 semaine)
+3. POC / Prototype (2-4 semaines)
+4. Développement et intégration (4-8 semaines)
+5. Tests et validation avec les équipes
+6. Mise en production et formation
+7. Pilotage et optimisation continue
+
+---
+
+### 2. Formations IA — Programmes pour Dirigeants et Équipes
+
+**Description** : Programmes de formation intensifs pour comprendre, maîtriser et intégrer l'IA dans les processus de l'entreprise. Adaptés au niveau de chaque participant, de la sensibilisation à l'expertise technique.
+
+**Formats disponibles** :
+- **Masterclass Dirigeants** (1 jour) : Vision stratégique de l'IA, opportunités par secteur, ROI attendu, cas concrets
+- **Programme Équipes** (3-5 jours) : Maîtrise des outils IA, prompt engineering, intégration dans les workflows quotidiens
+- **Formation Technique** (5-10 jours) : Développement d'agents IA, orchestration, déploiement, bonnes pratiques
+- **Coaching Continu** (mensuel) : Accompagnement personnalisé, revue des usages, optimisation continue
+
+**Thématiques couvertes** :
+- Fondamentaux de l'IA générative (LLMs, agents, RAG)
+- Prompt engineering avancé
+- Automatisation des processus métier avec l'IA
+- Sécurité et gouvernance des données IA
+- Éthique et IA responsable
+- Mesure du ROI des initiatives IA
+- Veille technologique et tendances
+
+**Public cible** :
+- Dirigeants et comités de direction
+- Managers et chefs de projet
+- Équipes marketing, commerciales, RH, finance
+- Développeurs et équipes techniques
+
+**Livrable** :
+- Supports de formation personnalisés
+- Exercices pratiques sur les données de l'entreprise
+- Certificat de complétion
+- Accès à une communauté privée
+- Suivi post-formation (1 mois)
+
+---
+
+### 3. Pilotage Agentique — Missions Stratégiques Déléguées
+
+**Description** : Délégation de missions stratégiques à des agents IA supervisés par des experts Orchestra Intelligence. Idéal pour les entreprises qui veulent des résultats rapides sans investissement technique.
+
+**Types de missions** :
+- **Audit IA Express** : Diagnostic complet de la maturité IA en 48h
+- **Veille Concurrentielle** : Surveillance automatisée des concurrents, alertes en temps réel
+- **Génération de Contenu** : Production de contenu marketing à grande échelle (articles, posts, newsletters)
+- **Analyse de Données** : Extraction d'insights à partir de données structurées et non structurées
+- **Automatisation Ponctuelle** : Création d'un workflow automatisé pour un besoin spécifique
+- **Migration IA** : Transition d'outils legacy vers des solutions IA modernes
+
+**Tarification** :
+- À partir de **1 000€** par mission (one-shot)
+- Packs mensuels disponibles à partir de 2 500€/mois
+- Devis sur mesure pour les projets complexes
+
+**Engagements** :
+- Livraison sous 48h à 2 semaines selon la complexité
+- Rapport de mission détaillé
+- Code source et documentation si applicable
+- Garantie de résultat ou remboursement
+
+---
+
+## Diagnostic IA Gratuit
+
+Orchestra Intelligence propose un diagnostic IA gratuit, accessible en ligne, qui évalue la maturité IA de l'entreprise en 3 minutes.
+
+**Fonctionnement** :
+1. Réponse à 8 questions sur les pratiques actuelles
+2. Analyse automatique par IA (Gemini)
+3. Score global sur 100 avec radar sur 6 axes
+4. Identification des forces et faiblesses
+5. Roadmap personnalisée en 5 étapes
+6. Rapport PDF téléchargeable immédiatement
+
+**Axes d'évaluation** :
+- Stratégie IA : vision, budget, roadmap
+- Données : qualité, accessibilité, gouvernance
+- Processus : niveau d'automatisation, workflows
+- Outils : stack technologique, intégrations
+- Compétences : formation, expertise interne
+- Culture : adoption, ouverture au changement
+
+**Pourquoi c'est gratuit** : Le diagnostic permet à Orchestra Intelligence de comprendre les besoins de l'entreprise et de proposer un accompagnement ciblé. Aucune obligation d'achat.
+
+---
+
+## Clients & Références
+
+Orchestra Intelligence accompagne des entreprises de toutes tailles, de la startup au groupe international :
+
+- **Schwarzkopf** (Henkel) : Agents IA pour le marketing et la création de contenu
+- **Henkel** : Automatisation de processus internes
+- **Wella** : Plateforme multi-agents pour la traduction, le contenu et la gestion documentaire
+- **Smart Renovation** : Agent IA pour la gestion de projets de rénovation à Dubaï
+- **WINPPI** : Agents IA pour l'optimisation commerciale
+- **Molie** : Automatisation marketing et CRM
+- **Carlance** : Solutions IA pour la gestion RH
+
+---
+
+## Équipe
+
+### Ludovic Goutel — Fondateur & CEO
+- 15+ ans d'expérience en technologie et marketing digital
+- Expert en IA générative, orchestration multi-agents, et stratégie digitale
+- Ancien directeur marketing dans l'industrie cosmétique (Henkel, Schwarzkopf, Wella)
+- Basé à Toulouse, opère à l'international
+
+---
+
+## Valeurs
+
+1. **Clarté** : Rendre l'IA compréhensible et accessible, sans jargon inutile
+2. **Utilité** : Chaque solution doit apporter un ROI mesurable et concret
+3. **Humanité** : L'IA augmente les capacités humaines, elle ne les remplace pas
+4. **Excellence** : Standards de qualité premium dans chaque livrable
+5. **Transparence** : Communication honnête sur les possibilités et limites de l'IA
+
+---
+
+## FAQ
+
+### Qu'est-ce qu'un agent IA ?
+Un agent IA est un programme intelligent capable d'exécuter des tâches de manière autonome ou semi-autonome. Contrairement à un simple chatbot, un agent peut prendre des décisions, interagir avec des outils externes (CRM, email, bases de données), et s'adapter au contexte.
+
+### Combien de temps pour déployer un agent IA ?
+Le délai moyen est de 4 à 8 semaines pour un agent complet, incluant le cadrage, le développement, les tests et la formation. Un POC (preuve de concept) peut être livré en 2 semaines.
+
+### Mes données sont-elles en sécurité ?
+Absolument. Orchestra Intelligence applique les standards les plus stricts en matière de sécurité des données : chiffrement de bout en bout, hébergement en Europe (ou selon les exigences client), conformité RGPD, politique de non-rétention des données par les LLMs.
+
+### Faut-il des compétences techniques pour utiliser les agents ?
+Non. Les agents sont conçus pour être utilisés par des non-techniciens. Une formation est systématiquement incluse pour garantir une adoption fluide.
+
+### Quel ROI attendre ?
+Le ROI varie selon le cas d'usage, mais nos clients constatent en moyenne : 40-60% de réduction du temps passé sur les tâches automatisées, 25-35% d'augmentation de la productivité des équipes, et un retour sur investissement en 3-6 mois.
+
+### Quelles technologies utilisez-vous ?
+Nous utilisons les meilleurs modèles de langage du marché (GPT-4, Claude, Gemini, Llama) selon le cas d'usage. Notre stack technique inclut React, Next.js, Python, Supabase, et des outils d'orchestration comme LangChain et CrewAI.
+
+### Travaillez-vous à l'international ?
+Oui. Basés à Toulouse, nous intervenons en France métropolitaine, en Suisse, à Dubaï et en Corée du Sud. Nos agents sont multilingues et nos équipes communiquent en français, anglais et coréen.
+
+### Comment démarrer ?
+1. Faites le diagnostic IA gratuit sur notre site (3 minutes)
+2. Réservez une consultation gratuite de 30 minutes
+3. Recevez une proposition sur mesure sous 48h
+4. Démarrage du projet dès validation
+
+---
+
+## Informations Légales
+
+- **Raison sociale** : Orchestra Intelligence
+- **Siège social** : Toulouse, France
+- **Directeur de la publication** : Ludovic Goutel
+- **Email** : sales@orchestraintelligence.fr
+- **Hébergeur** : Vercel Inc., San Francisco, CA, USA
+
+---
+
+## Politique de Confidentialité (Résumé)
+
+- Conformité RGPD
+- Données collectées : nom, email, entreprise (formulaires), cookies analytiques
+- Finalité : réponse aux demandes, amélioration du service, communication commerciale (avec consentement)
+- Durée de conservation : 3 ans maximum après le dernier contact
+- Droits : accès, rectification, suppression, portabilité, opposition
+- Contact DPO : sales@orchestraintelligence.fr
+
+---
+
+## Liens Utiles
+
+- Site web : https://www.orchestraintelligence.fr
+- Agent Studio : https://www.orchestraintelligence.fr/studio
+- Formations : https://www.orchestraintelligence.fr/formation
+- Pilotage Agentique : https://www.orchestraintelligence.fr/pilotage
+- Diagnostic gratuit : https://www.orchestraintelligence.fr/diagnostic
+- Blog : https://www.orchestraintelligence.fr/blog
+- Contact : sales@orchestraintelligence.fr
+
+---
+
+*Document généré pour ingestion par LLM. Dernière mise à jour : Mars 2026.*
+*© 2025–2026 Orchestra Intelligence. Tous droits réservés.*

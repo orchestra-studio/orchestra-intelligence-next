@@ -1,65 +1,300 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import {
+  ArrowRight, Brain, Cpu, BarChart3,
+  CheckCircle2, Clock, Layers, Zap, Lightbulb,
+} from "lucide-react";
+import { CONTENT, CLIENT_LOGOS } from "@/lib/i18n";
+import GlobalPresence from "@/components/home/GlobalPresence";
+import DiagnosticSection from "@/components/home/DiagnosticSection";
+import FAQ from "@/components/home/FAQ";
+import ContactForm from "@/components/home/ContactForm";
 
-export default function Home() {
+// ===== SEO Metadata =====
+export const metadata: Metadata = {
+  title: "Orchestra Intelligence — L'IA Claire, Utile et Humaine",
+  description:
+    "Formation IA sur mesure, développement d'agents intelligents et pilotage agentique. Diagnostic gratuit en 3 minutes. Toulouse, France | International.",
+  openGraph: {
+    title: "Orchestra Intelligence — L'IA Claire, Utile et Humaine",
+    description:
+      "Formation IA sur mesure, développement d'agents intelligents et pilotage agentique pour libérer le potentiel de vos équipes.",
+    url: "https://www.orchestraintelligence.fr",
+    siteName: "Orchestra Intelligence",
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Orchestra Intelligence — L'IA Claire, Utile et Humaine",
+    description: "Formation IA, agents intelligents et pilotage agentique. Diagnostic gratuit.",
+  },
+  alternates: {
+    canonical: "https://www.orchestraintelligence.fr",
+  },
+};
+
+const lang = "fr" as const;
+
+export default function HomePage() {
+  const t = CONTENT[lang];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      {/* JSON-LD Schema.org */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Orchestra Intelligence",
+            url: "https://www.orchestraintelligence.fr",
+            logo: "https://www.orchestraintelligence.fr/logo.png",
+            description: t.hero.desc,
+            email: "sales@orchestraintelligence.fr",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Toulouse",
+              addressCountry: "FR",
+            },
+            sameAs: [
+              "https://www.linkedin.com/company/orchestra-intelligence",
+              "https://x.com/music_music_AI",
+            ],
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "AI Services",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: { "@type": "Service", name: "Formation IA", description: "Programmes exécutifs pour maîtriser l'IA stratégique" },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: { "@type": "Service", name: "Agent Studio", description: "Développement d'agents IA sur mesure" },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: { "@type": "Service", name: "Pilotage Agentique", description: "Délégation de missions stratégiques" },
+                },
+              ],
+            },
+          }),
+        }}
+      />
+
+      <div className="animate-fade-in-up">
+        {/* ===== 1. HERO ===== */}
+        <section className="relative min-h-screen flex flex-col justify-center items-center pt-20 overflow-hidden">
+          {/* Background Effects */}
+          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none mix-blend-overlay" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-blob mix-blend-screen" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-screen" />
+          <div className="absolute inset-0 bg-grid-pattern bg-[length:40px_40px] opacity-20 pointer-events-none" />
+
+          <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-mono uppercase tracking-wider mb-8 animate-fade-in-up">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              {t.hero.badge}
+            </div>
+
+            <h1
+              className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-8 leading-[1.1] animate-fade-in-up"
+              style={{ animationDelay: "0.1s" }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              {t.hero.titleLine1} <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-indigo-400 to-accent text-glow">
+                {t.hero.titleLine2}
+              </span>
+            </h1>
+
+            <p
+              className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up"
+              style={{ animationDelay: "0.2s" }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+              {t.hero.desc}
+            </p>
+
+            <div
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
+              style={{ animationDelay: "0.3s" }}
+            >
+              <Link
+                href="/diagnostic"
+                className="group relative px-8 py-4 bg-white text-black font-semibold rounded-lg overflow-hidden transition-all hover:scale-105"
+              >
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/50 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
+                <span className="relative flex items-center gap-2">
+                  {t.hero.ctaPrimary} <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+              <a
+                href="https://cal.com/orchestra-intelligence"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-lg glass-card text-white font-medium hover:bg-white/5 transition-all border border-white/10"
+              >
+                {t.hero.ctaSecondary}
+              </a>
+            </div>
+          </div>
+
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-20 pointer-events-none" />
+        </section>
+
+        {/* ===== 2. GLOBAL PRESENCE ===== */}
+        <GlobalPresence trusted={t.global.trusted} hubs={t.global.hubs} />
+
+        {/* ===== 3. PROBLEM ===== */}
+        <section className="py-24 px-6 relative">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">{t.problem.title}</h2>
+              <p className="text-xl text-gray-400">
+                {t.problem.subtitle} <br />
+                <span className="text-white">{t.problem.highlight}</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {t.problem.items.map((prob, idx) => {
+                const icons = [
+                  <Clock key="clock" className="w-6 h-6 text-red-400" />,
+                  <Layers key="layers" className="w-6 h-6 text-orange-400" />,
+                  <Zap key="zap" className="w-6 h-6 text-yellow-400" />,
+                  <Lightbulb key="bulb" className="w-6 h-6 text-purple-400" />,
+                ];
+                return (
+                  <div
+                    key={idx}
+                    className="glass-card p-6 rounded-2xl hover:bg-white/5 transition-all duration-300 hover:-translate-y-2 group"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                      {icons[idx]}
+                    </div>
+                    <h3 className="text-lg font-bold mb-3">{prob.title}</h3>
+                    <p className="text-sm text-gray-400 leading-relaxed">{prob.desc}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 4. METHODOLOGY ===== */}
+        <section id="methode" className="py-24 px-6 relative bg-surfaceHighlight/30 border-y border-white/5">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">{t.method.title}</h2>
+              <p className="text-gray-400">{t.method.subtitle}</p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Formation Card */}
+              <Link
+                href="/formation"
+                className="group relative rounded-3xl bg-background border border-white/10 overflow-hidden hover:border-primary/50 transition-all duration-500"
+              >
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="p-8 relative z-10 h-full flex flex-col">
+                  <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 text-primary">
+                    <Brain className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">{t.method.cards.formation.title}</h3>
+                  <p className="text-primary font-mono text-sm mb-6">{t.method.cards.formation.tagline}</p>
+                  <p className="text-gray-400 mb-8 flex-grow">{t.method.cards.formation.desc}</p>
+
+                  <ul className="space-y-3 mb-8">
+                    {t.method.cards.formation.points.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
+                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <span className="flex items-center gap-2 text-sm font-semibold hover:text-primary transition-colors mt-auto">
+                    {t.method.cta} <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+
+              {/* Studio Card (Featured) */}
+              <Link
+                href="/studio"
+                className="group relative rounded-3xl bg-background border border-white/10 overflow-hidden hover:border-purple-500/50 transition-all duration-500 transform lg:-translate-y-4 shadow-2xl shadow-purple-500/10"
+              >
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-4 right-4 bg-purple-500/20 text-purple-300 text-xs px-3 py-1 rounded-full border border-purple-500/30">
+                  Featured
+                </div>
+                <div className="p-8 relative z-10 h-full flex flex-col">
+                  <div className="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-6 text-purple-500">
+                    <Cpu className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">{t.method.cards.studio.title}</h3>
+                  <p className="text-purple-400 font-mono text-sm mb-6">{t.method.cards.studio.tagline}</p>
+                  <p className="text-gray-400 mb-8">{t.method.cards.studio.desc}</p>
+
+                  <div className="grid grid-cols-2 gap-2 mb-6">
+                    {t.method.cards.studio.tags.map((tag) => (
+                      <span key={tag} className="text-xs text-center py-1.5 rounded bg-white/5 border border-white/5 text-gray-300">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="text-xs text-gray-500 font-mono mb-8 border-t border-white/5 pt-4">
+                    {t.method.cards.studio.footer}
+                  </div>
+
+                  <span className="flex items-center gap-2 text-sm font-semibold hover:text-purple-400 transition-colors mt-auto">
+                    {t.method.cta} <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+
+              {/* Pilotage Card */}
+              <Link
+                href="/pilotage"
+                className="group relative rounded-3xl bg-background border border-white/10 overflow-hidden hover:border-emerald-500/50 transition-all duration-500"
+              >
+                <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="p-8 relative z-10 h-full flex flex-col">
+                  <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 text-emerald-500">
+                    <BarChart3 className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">{t.method.cards.pilotage.title}</h3>
+                  <p className="text-emerald-500 font-mono text-sm mb-6">{t.method.cards.pilotage.tagline}</p>
+                  <p className="text-gray-400 mb-8 flex-grow">{t.method.cards.pilotage.desc}</p>
+
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {t.method.cards.pilotage.tags.map((tag, i) => (
+                      <span key={i} className="text-xs py-1 px-2 rounded-md bg-white/5 text-gray-400">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <span className="flex items-center gap-2 text-sm font-semibold hover:text-emerald-500 transition-colors mt-auto">
+                    {t.method.cta} <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ===== 5. DIAGNOSTIC ===== */}
+        <DiagnosticSection {...t.diagnostic} />
+
+        {/* ===== 6. FAQ ===== */}
+        <FAQ title={t.faq.title} subtitle={t.faq.subtitle} items={t.faq.items} />
+
+        {/* ===== 7. CONTACT ===== */}
+        <ContactForm lang={lang} title={t.contact.title} cta={t.contact.cta} placeholders={t.contact.placeholders} />
+      </div>
+    </>
   );
 }

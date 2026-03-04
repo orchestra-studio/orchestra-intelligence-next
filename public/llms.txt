@@ -1,0 +1,18 @@
+# Orchestra Intelligence
+> L'IA Claire, Utile et Humaine. Orchestra Intelligence est une agence spécialisée dans le développement et le déploiement d'agents IA pour les entreprises. Basée à Toulouse, présente en France, Suisse, Dubaï et Corée.
+
+## Offres
+- [Agent Studio](https://www.orchestraintelligence.fr/studio): Agents IA sur mesure pour CRM, Marketing, RH et Finance — à partir de 3 000€/mois
+- [Formations IA](https://www.orchestraintelligence.fr/formation): Programmes de formation IA pour dirigeants et équipes
+- [Pilotage Agentique](https://www.orchestraintelligence.fr/pilotage): Missions stratégiques déléguées à des agents IA supervisés — à partir de 1 000€
+- [Diagnostic IA Gratuit](https://www.orchestraintelligence.fr/diagnostic): Évaluation 360° en 3 minutes avec score et roadmap PDF personnalisée
+
+## Clients
+Schwarzkopf, Henkel, Wella, Smart Renovation, WINPPI, Molie, Carlance
+
+## Contact
+- Email: sales@orchestraintelligence.fr
+- Site: https://www.orchestraintelligence.fr
+
+## Documentation
+- [llms-full.txt](https://www.orchestraintelligence.fr/llms-full.txt): Documentation complète pour ingestion par LLM
