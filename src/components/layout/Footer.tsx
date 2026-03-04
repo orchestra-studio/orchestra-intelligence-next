@@ -172,7 +172,7 @@ export function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 text-center text-gray-600 text-xs">
-        <p>&copy; 2025 Orchestra Intelligence. Tous droits réservés.</p>
+        <p>&copy; 2026 Orchestra Intelligence. Tous droits réservés.</p>
       </div>
     </footer>
   );
