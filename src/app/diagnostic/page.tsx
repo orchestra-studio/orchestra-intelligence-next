@@ -1,28 +1,29 @@
 import type { Metadata } from "next";
+import DiagnosticPageClient from "./DiagnosticPageClient";
 
 export const metadata: Metadata = {
-  title: "Diagnostic IA Gratuit — Évaluation 360° en 3 minutes",
+  title: "Diagnostic IA Gratuit — Évaluation 360° en 3 minutes | Orchestra Intelligence",
   description:
     "Évaluez votre maturité IA en 3 minutes. Score 360°, radar multi-dimensionnel et roadmap PDF personnalisée. Gratuit et sans engagement.",
+  openGraph: {
+    title: "Diagnostic IA Gratuit — Score 360° en 3 minutes",
+    description:
+      "Évaluez votre maturité IA en 3 minutes. Recevez votre score, radar et roadmap personnalisée.",
+    url: "https://www.orchestraintelligence.fr/diagnostic",
+    siteName: "Orchestra Intelligence",
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Diagnostic IA Gratuit | Orchestra Intelligence",
+    description: "Évaluez votre maturité IA en 3 minutes. Score 360° et roadmap personnalisée.",
+  },
+  alternates: {
+    canonical: "https://www.orchestraintelligence.fr/diagnostic",
+  },
 };
 
 export default function DiagnosticPage() {
-  return (
-    <div className="pt-32 pb-24 px-6 min-h-screen">
-      <div className="max-w-4xl mx-auto text-center">
-        <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-          Audit IA Gratuit
-        </span>
-        <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
-          Diagnostic{" "}
-          <span className="gradient-text">IA</span>
-        </h1>
-        <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Évaluez votre maturité IA en 3 minutes. Recevez votre score 360° et
-          votre roadmap personnalisée.
-        </p>
-        {/* TODO: Interactive audit wizard — ported by dedicated worker */}
-      </div>
-    </div>
-  );
+  return <DiagnosticPageClient />;
 }
