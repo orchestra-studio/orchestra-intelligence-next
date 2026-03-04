@@ -23,11 +23,11 @@ import {
 
 /* ─── Metadata ────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: 'Notre Méthode — Orchestra Intelligence',
+  title: 'Notre Méthode — Comprendre, Automatiser, Piloter',
   description:
     "Comprendre → Automatiser → Piloter. Notre méthode unique combine l'expertise humaine et la puissance de l'IA pour libérer le potentiel de vos équipes.",
   openGraph: {
-    title: 'Notre Méthode — Orchestra Intelligence',
+    title: 'Notre Méthode — Comprendre, Automatiser, Piloter',
     description:
       "L'IA qui libère, pas qui remplace. Découvrez notre manifeste et notre processus en 5 étapes.",
     url: 'https://www.orchestraintelligence.fr/methode',

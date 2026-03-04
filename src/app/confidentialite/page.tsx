@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import { LegalPageWrapper } from '@/components/legal-page-wrapper';
 
 export const metadata: Metadata = {
-  title: 'Politique de Confidentialité — Orchestra Intelligence',
+  title: 'Politique de Confidentialité — RGPD',
   description: 'Politique de confidentialité et protection des données personnelles (RGPD) d\'Orchestra Intelligence.',
   openGraph: {
-    title: 'Politique de Confidentialité — Orchestra Intelligence',
+    title: 'Politique de Confidentialité — RGPD',
     description: 'Protection des données personnelles, cookies, droits RGPD.',
     url: 'https://www.orchestraintelligence.fr/confidentialite',
   },

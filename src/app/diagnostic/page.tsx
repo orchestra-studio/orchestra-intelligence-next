@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import DiagnosticPageClient from "./DiagnosticPageClient";
 
 export const metadata: Metadata = {
-  title: "Diagnostic IA Gratuit — Évaluation 360° en 3 minutes | Orchestra Intelligence",
+  title: "Diagnostic IA Gratuit — Évaluation 360° en 3 Minutes",
   description:
     "Évaluez votre maturité IA en 3 minutes. Score 360°, radar multi-dimensionnel et roadmap PDF personnalisée. Gratuit et sans engagement.",
   openGraph: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Diagnostic IA Gratuit | Orchestra Intelligence",
+    title: "Diagnostic IA Gratuit — Score 360°",
     description: "Évaluez votre maturité IA en 3 minutes. Score 360° et roadmap personnalisée.",
   },
   alternates: {

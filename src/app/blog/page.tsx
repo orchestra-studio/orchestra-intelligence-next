@@ -5,7 +5,7 @@ import { NewsletterForm } from '@/components/newsletter-form';
 
 /* ─── Metadata ────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: "Blog — L'actualité de l'Intelligence Artificielle | Orchestra Intelligence",
+  title: "Blog — L'Actualité de l'Intelligence Artificielle",
   description:
     "Analyses, cas d'usage et guides pratiques pour comprendre et déployer l'IA dans votre entreprise. Par Ludovic Goutel.",
   openGraph: {

@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.ico" },
 };
 
-// Schema.org JSON-LD
-const jsonLd = {
+// Schema.org JSON-LD — Organization
+const jsonLdOrg = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Orchestra Intelligence",
@@ -73,6 +73,21 @@ const jsonLd = {
   ],
 };
 
+// Schema.org JSON-LD — WebSite
+const jsonLdWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Orchestra Intelligence",
+  url: "https://www.orchestraintelligence.fr",
+  description: "L'IA Claire, Utile et Humaine",
+  inLanguage: ["fr", "en"],
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.orchestraintelligence.fr/blog?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -83,7 +98,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrg) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
         />
       </head>
       <body

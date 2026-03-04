@@ -9,11 +9,11 @@ import ScrollButton from "@/components/ui/ScrollButton";
 
 // ===== SEO Metadata =====
 export const metadata: Metadata = {
-  title: "Formations IA | Orchestra Intelligence",
+  title: "Formations IA pour Dirigeants et Équipes",
   description:
     "Formations IA immersives et pratiques pour vos équipes. De la découverte à l'expertise, apprenez à maîtriser les agents IA. Ateliers personnalisés à partir de 1 500€.",
   openGraph: {
-    title: "Formations IA | Orchestra Intelligence",
+    title: "Formations IA pour Dirigeants et Équipes",
     description:
       "Formations IA immersives pour entreprises. Ateliers pratiques, cas d'usage concrets, +500 talents formés.",
     url: "https://www.orchestraintelligence.fr/formation",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Formations IA | Orchestra Intelligence",
+    title: "Formations IA pour Dirigeants et Équipes",
     description: "Formations IA immersives pour vos équipes. Découvrez nos programmes.",
   },
   alternates: {

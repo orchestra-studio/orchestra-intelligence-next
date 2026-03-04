@@ -20,11 +20,11 @@ import {
 
 /* ─── Metadata ────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: 'Trust Center — Sécurité & Conformité | Orchestra Intelligence',
+  title: 'Trust Center — Sécurité & Conformité',
   description:
     'Découvrez nos engagements en matière de sécurité, conformité RGPD, hébergement européen et gouvernance IA. Vos données sont protégées.',
   openGraph: {
-    title: 'Trust Center — Orchestra Intelligence',
+    title: 'Trust Center — Sécurité & Conformité',
     description:
       'Hébergement EU, RGPD, chiffrement, Human-in-the-Loop. Vos données sont entre de bonnes mains.',
     url: 'https://www.orchestraintelligence.fr/trust-center',

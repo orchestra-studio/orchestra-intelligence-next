@@ -8,11 +8,11 @@ import Link from "next/link";
 
 // ===== SEO Metadata =====
 export const metadata: Metadata = {
-  title: "Pilotage Agentique — Missions Stratégiques Déléguées | Orchestra Intelligence",
+  title: "Pilotage Agentique — Missions Stratégiques Déléguées",
   description:
     "Délégation de missions stratégiques à des agents IA supervisés par nos experts. Marketing, analytique, développement, design. À partir de 1 000€ par mission.",
   openGraph: {
-    title: "Pilotage Agentique — Missions IA Déléguées",
+    title: "Pilotage Agentique — Missions Stratégiques Déléguées",
     description:
       "Confiez vos missions stratégiques à nos experts et leurs agents IA. Résultats garantis, à partir de 1 000€.",
     url: "https://www.orchestraintelligence.fr/pilotage",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pilotage Agentique | Orchestra Intelligence",
+    title: "Pilotage Agentique — Missions Déléguées",
     description: "Missions stratégiques déléguées à nos agents IA supervisés.",
   },
   alternates: {

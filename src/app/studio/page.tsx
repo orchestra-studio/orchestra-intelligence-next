@@ -11,11 +11,11 @@ import ScrollButton from "@/components/ui/ScrollButton";
 
 // ===== SEO Metadata =====
 export const metadata: Metadata = {
-  title: "Agent Studio — Développement IA Sur Mesure | Orchestra Intelligence",
+  title: "Agent Studio — Agents IA sur Mesure",
   description:
     "Développement d'agents IA et SaaS sur mesure. De l'idée à la production en 2-4 semaines. +500 intégrations. Conformité RGPD. Devis gratuit.",
   openGraph: {
-    title: "Agent Studio — Développement IA Sur Mesure | Orchestra Intelligence",
+    title: "Agent Studio — Agents IA sur Mesure",
     description:
       "SaaS et agents IA sur mesure pour votre entreprise. Stack moderne, livraison rapide, sécurité RGPD.",
     url: "https://www.orchestraintelligence.fr/studio",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agent Studio | Orchestra Intelligence",
+    title: "Agent Studio — Agents IA sur Mesure",
     description: "Développement IA sur mesure. SaaS & AaaS à la demande.",
   },
   alternates: {
@@ -64,6 +64,27 @@ export default function StudioPage() {
                 { "@type": "Offer", itemOffered: { "@type": "Service", name: "AaaS - Agent as a Service" } },
                 { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI Agent Integration" } },
               ],
+            },
+          }),
+        }}
+      />
+      {/* JSON-LD — SoftwareApplication */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "Orchestra Agent Studio",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            description: "Agents IA sur mesure pour CRM, Marketing, RH et Finance",
+            offers: {
+              "@type": "Offer",
+              price: "3000",
+              priceCurrency: "EUR",
+              priceValidUntil: "2027-01-01",
+              availability: "https://schema.org/InStock",
             },
           }),
         }}

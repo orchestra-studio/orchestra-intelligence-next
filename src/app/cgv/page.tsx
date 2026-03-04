@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { LegalPageWrapper } from '@/components/legal-page-wrapper';
 
 export const metadata: Metadata = {
-  title: 'Conditions Générales de Vente — Orchestra Intelligence',
+  title: 'Conditions Générales de Vente',
   description: "CGV d'Orchestra Intelligence. Services Agent Studio, formations IA, pilotage agentique. Tarifs, paiement, responsabilité.",
   openGraph: {
-    title: 'CGV — Orchestra Intelligence',
+    title: 'Conditions Générales de Vente',
     description: "Conditions générales de vente des prestations Orchestra Intelligence.",
     url: 'https://www.orchestraintelligence.fr/cgv',
   },

@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { LegalPageWrapper } from '@/components/legal-page-wrapper';
 
 export const metadata: Metadata = {
-  title: 'Mentions Légales — Orchestra Intelligence',
+  title: 'Mentions Légales',
   description: "Mentions légales du site Orchestra Intelligence. Éditeur, hébergeur, propriété intellectuelle.",
   openGraph: {
-    title: 'Mentions Légales — Orchestra Intelligence',
+    title: 'Mentions Légales',
     description: "Mentions légales du site Orchestra Intelligence.",
     url: 'https://www.orchestraintelligence.fr/mentions-legales',
   },

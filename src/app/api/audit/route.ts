@@ -181,17 +181,23 @@ async function generateGeminiReport(
 
   const prompt =
     lang === 'fr'
-      ? `Tu es un consultant IA expert. Voici les résultats d'un audit de maturité IA d'une entreprise :
+      ? `Tu es un consultant IA expert d'Orchestra Intelligence. IMPORTANT : Réponds UNIQUEMENT en français.
+
+Voici les résultats d'un audit de maturité IA d'une entreprise :
 
 ${history.map((h) => `- ${h.category}: "${h.answerLabel}" (score: ${h.score}/100)`).join('\n')}
 
-Génère un résumé exécutif (3-4 phrases max), 3 forces clés et 3 axes d'amélioration prioritaires. 
+Génère un résumé exécutif (3-4 phrases max), 3 forces clés et 3 axes d'amélioration prioritaires.
+Tout le contenu (summary, strengths, weaknesses, roadmap actions) DOIT être rédigé en français.
 Réponds en JSON : { "summary": "...", "strengths": ["...", "...", "..."], "weaknesses": ["...", "...", "..."], "roadmap": [{"step": "Phase 1", "action": "..."}, {"step": "Phase 2", "action": "..."}, {"step": "Phase 3", "action": "..."}] }`
-      : `You are an expert AI consultant. Here are the results of a company's AI maturity audit:
+      : `You are an expert AI consultant from Orchestra Intelligence. IMPORTANT: Respond ONLY in English.
+
+Here are the results of a company's AI maturity audit:
 
 ${history.map((h) => `- ${h.category}: "${h.answerLabel}" (score: ${h.score}/100)`).join('\n')}
 
 Generate an executive summary (3-4 sentences max), 3 key strengths and 3 priority improvement areas.
+All content (summary, strengths, weaknesses, roadmap actions) MUST be written in English.
 Reply in JSON: { "summary": "...", "strengths": ["...", "...", "..."], "weaknesses": ["...", "...", "..."], "roadmap": [{"step": "Phase 1", "action": "..."}, {"step": "Phase 2", "action": "..."}, {"step": "Phase 3", "action": "..."}] }`;
 
   const response = await ai.models.generateContent({

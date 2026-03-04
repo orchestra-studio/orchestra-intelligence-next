@@ -156,6 +156,22 @@ export default function HomePage() {
                   text: "Le diagnostic prend 3 minutes : 12 questions clés sur votre activité, un algorithme de scoring multi-dimensionnel 360°, et vous recevez une roadmap PDF personnalisée avec vos leviers de croissance. C'est gratuit et sans engagement.",
                 },
               },
+              {
+                "@type": "Question",
+                name: "Quel est le ROI moyen d'un agent IA Orchestra ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Nos clients constatent en moyenne une réduction de 40% du temps passé sur les tâches automatisées et un ROI positif dès le 3ème mois. Le diagnostic gratuit vous donne une estimation personnalisée.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Orchestra Intelligence travaille-t-il à l'international ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, nous sommes présents en France (Toulouse), Suisse, Dubaï et Corée du Sud. Nos agents sont multilingues et nous accompagnons des clients internationaux comme Wella, Schwarzkopf et Henkel.",
+                },
+              },
             ],
           }),
         }}
