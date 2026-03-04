@@ -41,7 +41,7 @@ export default function HomePage() {
 
   return (
     <>
-      {/* JSON-LD Schema.org */}
+      {/* JSON-LD Schema.org — Organization */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -80,6 +80,83 @@ export default function HomePage() {
                 },
               ],
             },
+          }),
+        }}
+      />
+
+      {/* JSON-LD Schema.org — FAQPage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Qu'est-ce qu'un agent IA et comment peut-il aider mon entreprise ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Un agent IA est un système intelligent capable d'effectuer des tâches de manière autonome : analyser des données, prendre des décisions, automatiser des processus métier. Contrairement à un simple logiciel, il apprend et s'adapte à votre contexte.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Quelle est la différence entre un agent IA et un simple chatbot ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Les chatbots répondent à des questions préprogrammées. Un agent IA comprend le contexte, apprend de vos données, s'intègre à vos outils et exécute des actions complexes de manière autonome.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Combien coûte l'implémentation d'agents IA ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Le Pilotage Agentique ponctuel démarre à 1 000€, la formule Studio mensuelle à partir de 3 000€/mois. Un diagnostic gratuit précède toujours l'engagement.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Combien de temps pour déployer un agent IA opérationnel ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Pour un agent simple, 7 à 10 jours. Pour un système multi-agents complexe, entre 15 et 30 jours. Un POC fonctionnel est livré dès la première semaine.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Mes données sont-elles sécurisées ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Toutes vos données sont hébergées en Europe, conformes au RGPD, et ne sont jamais revendues. Chiffrement de bout en bout et contrôle utilisateur garanti. Nous suivons les normes ISO 27001.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Vos agents IA peuvent-ils s'intégrer à mes outils existants ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Nous avons plus de 500 intégrations disponibles : CRM (Salesforce, HubSpot), communication (Slack, Gmail, Teams), bases de données, outils de gestion, plateformes e-commerce, et bien d'autres.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Proposez-vous des formations IA pour les dirigeants ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, nous proposons des programmes exécutifs de formation IA couvrant les fondamentaux, l'identification d'opportunités et la maîtrise des outils. Les formations sont immersives, pratiques et adaptées à votre secteur d'activité.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Comment fonctionne le diagnostic IA gratuit ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Le diagnostic prend 3 minutes : 12 questions clés sur votre activité, un algorithme de scoring multi-dimensionnel 360°, et vous recevez une roadmap PDF personnalisée avec vos leviers de croissance. C'est gratuit et sans engagement.",
+                },
+              },
+            ],
           }),
         }}
       />

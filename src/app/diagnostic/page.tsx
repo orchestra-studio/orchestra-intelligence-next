@@ -25,5 +25,34 @@ export const metadata: Metadata = {
 };
 
 export default function DiagnosticPage() {
-  return <DiagnosticPageClient />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: "Diagnostic IA Orchestra Intelligence",
+            description:
+              "Évaluez la maturité IA de votre entreprise en 3 minutes. Score 360°, radar multi-dimensionnel et roadmap PDF personnalisée.",
+            url: "https://www.orchestraintelligence.fr/diagnostic",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "All",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "EUR",
+            },
+            provider: {
+              "@type": "Organization",
+              name: "Orchestra Intelligence",
+              url: "https://www.orchestraintelligence.fr",
+            },
+          }),
+        }}
+      />
+      <DiagnosticPageClient />
+    </>
+  );
 }

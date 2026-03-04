@@ -70,7 +70,33 @@ export default async function BlogPostPage({
     .filter((p) => p.id !== post.id)
     .slice(0, 3);
 
+  // BlogPosting JSON-LD schema
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    author: { "@type": "Organization", name: "Orchestra Intelligence" },
+    publisher: {
+      "@type": "Organization",
+      name: "Orchestra Intelligence",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.orchestraintelligence.fr/logo.png",
+      },
+    },
+    datePublished: post.date,
+    mainEntityOfPage: `https://www.orchestraintelligence.fr/blog/${slug}`,
+    articleSection: post.category,
+    inLanguage: lang === "fr" ? "fr-FR" : "en-US",
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
     <div className="pt-24 pb-24 animate-fade-in-up">
       <div className="max-w-4xl mx-auto px-6">
         {/* Back */}
@@ -172,5 +198,6 @@ export default async function BlogPostPage({
         </div>
       </section>
     </div>
+    </>
   );
 }
